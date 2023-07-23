@@ -1,13 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="fantasy">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>    
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>daisy-Khala</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-bg': "url('Img/yellow-bg.jpg')",
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <!-----------Header-----------Section----------Start--------->
+    <header>
+        <!------------Navbar-------------Start---------------->
+        <nav class="">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-2xl text-bold">Daisy Khala</a>
+                </div>
+                <div class="flex-none">
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span class="badge badge-sm indicator-item">8</span>
+                            </div>
+                        </label>
+                        <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                            <div class="card-body">
+                                <span class="font-bold text-lg">8 Items</span>
+                                <span class="text-info">Subtotal: $999</span>
+                                <div class="card-actions">
+                                    <button class="btn btn-outline btn-secondary">Secondary</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="Img/avatar.png" />
+                            </div>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!------------Navbar-------------Start---------------->
+
+
+
+        <!------------Hero-------------Start---------------->
+        <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <!------------Hero-------------Start---------------->
+    </header>
+    <!-----------Header-----------Section----------End--------->
+
+
+
+
+
+    <main>
+     <!-----------About-----------Section----------Start--------->
+     <section class="max-w-screen-xl mx-auto my-10 py-5 md:px-16 lg:px-24 px-4 py-8">
+        <div class="flex gap-8 flex-col md:flex-row justify-centert items-center">
+            <div class="flex-1">
+                <h1 class="text-3xl text-normal">Easy Purchase</h1>
+                <p>we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.Our mission is to provide you with a diverse and trendy collection.</p>
+            </div>
+            <div class="flex-1">
+                <img class="rounded" src="Img/blog.jpg" alt="">
+            </div>
+        </div>
+     </section>
+     <!-----------About-----------Section----------End--------->     
+
+
+
+
+
+        <!-----------Product-----------Section----------Start--------->
+        <section class="max-w-screen-xl mx-auto my-10 py-5 md:px-16 lg:px-24 px-4 py-8">
+            <h1 class="text-normal text-2xl text-center my-2 ">Huge Collection</h1>
+            <h3 class="text-normal text-center">Browse from a various collections</h3>
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-5">
+                <!------Card------1----->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="Img/shart-1.jpg"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!------Card------2----->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="Img/shose.webp"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!------Card------3----->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="Img/tee-shart.jpg"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!------Card------4----->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="Img/tee-shart.jpg"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!------Card------5----->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="Img/shose.webp"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!------Card------6----->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="Img/shart-1.jpg"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------Product-----------Section----------End--------->
+
+
+
+
+       <!-----------Product-2-----------Section----------Start--------->
+       <section class="max-w-screen-xl mx-auto my-10 py-5 md:px-16 lg:px-24 px-4 py-8">
+        <h1 class="text-normal text-2xl text-center my-2 ">Top Products</h1>
+        <h3 class="text-normal text-center">Browse from a various collections</h3>
+        <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10">
+            <!--------Card------1-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <!--------Card------2-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <!--------Card------3-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <!--------Card------4-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <!--------Card------5-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <!--------Card------6-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <!--------Card------7-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+             <!--------Card------8-------->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Formal Shirt</h2>
+                  <p>
+                    Our mission is to provide you with a diverse and trendy
+                    collection.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+           </div>
+       </section>
+       <!-----------Product-2-----------Section----------End---------> 
+
+
+
+
+       <!-----------Question-----------Section----------Start--------->  
+       <section class="max-w-screen-xl mx-auto my-10 py-2 md:-16 lg:px-24 px-4 py-8">
+        <h1 class="text-normal text-2xl text-center my-2 ">Frequently Asked Questions</h1>
+        <h3 class="text-normal text-center">Browse from a various collections</h3>
+        <div class="mt-8">
+            <!----------Accordion--------1------->
+            <div class="collapse collapse-plus bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                    How can I purchase...?
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <!----------Accordion--------2------->
+              <div class="collapse collapse-plus bg-base-200 mb-4 ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What's the delivery system?....?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Yes , I See...?</p>
+                </div>
+              </div>
+              <!----------Accordion--------3------->
+              <div class="collapse collapse-plus bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What's the delivery system......?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Thank You Som Much</p>
+                </div>
+              </div>
+        </div>
+       </section>
+       <!-----------Question-----------Section----------End--------->
+    </main>
+
+
+
+    <!-----------Footer-----------Section----------Start---------> 
+    <footer class="footer p-10 bg-neutral flex text-neutral-content items-center justify-around ">
+        <div>
+          <span class="footer-title">Services</span> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div> 
+        <div>
+          <span class="footer-title">Company</span> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div> 
+        <div>
+          <span class="footer-title">Legal</span> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+      </footer>
+    <!-----------Footer-----------Section----------Start---------> 
 </body>
 </html>
